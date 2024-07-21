@@ -7,7 +7,7 @@ import {
   TextInput,
   Card
 } from "flowbite-react";
-import { DarkThemeToggle } from "flowbite-react";
+// import { DarkThemeToggle } from "flowbite-react";
 import { PasswordGen } from './utils';
 import SwitchComponents from './toggleswitch';
 

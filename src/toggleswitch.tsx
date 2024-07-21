@@ -1,4 +1,9 @@
-const SwitchComponents = ({label,checked,onChange})=>{
+interface SwitchComponentsProps {
+  label: string;
+  checked: boolean;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+const SwitchComponents:React.FC<SwitchComponentsProps>  = ({label,checked,onChange})=>{
     return(
       <div className="items-center mb-3 grid grid-flow-col grid-cols-2 justify-stretch dark:bg-[#25193D]">
       <p className="flex justify-self-start text-sm font-medium text-gray-900 dark:text-gray-300">{label}</p>
